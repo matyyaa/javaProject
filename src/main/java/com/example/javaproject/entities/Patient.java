@@ -6,12 +6,13 @@ public class Patient {
 
     private int id;
     private String name;
-    private Date birthday;
+    private String birthday;
     private String diagnosis;
-    private int doctor_id;
     private boolean status;
+    private int doctor_id;
 
-    public Patient(int id, String name, Date birthday, String diagnosis, int doctor_id, boolean status) {
+
+    public Patient(int id, String name, String birthday, String diagnosis,  boolean status, int doctor_id) {
         this.id = id;
         this.name = name;
         this.birthday = birthday;
@@ -20,7 +21,7 @@ public class Patient {
         this.status = status;
     }
 
-    public Patient(String name, Date birthday, String diagnosis, int doctor_id, boolean status) {
+    public Patient(String name, String birthday, String diagnosis, boolean status, int doctor_id) {
         this.name = name;
         this.birthday = birthday;
         this.diagnosis = diagnosis;
@@ -44,11 +45,11 @@ public class Patient {
         this.name = name;
     }
 
-    public Date getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
 

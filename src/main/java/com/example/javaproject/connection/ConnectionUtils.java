@@ -7,7 +7,6 @@ public class ConnectionUtils {
 
     public static Connection getConnection()
             throws ClassNotFoundException, SQLException {
-
         return MySQLConnUtils.getMySQLConnection();
     }
 
